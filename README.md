@@ -1,4 +1,4 @@
-# 🔬 Aragon Permission Manager – Gas Cost Analysis
+# Aragon Permission Manager – Gas Cost Analysis
 
 This repository is a **research fork** of the Aragon OSx protocol contracts, created with the sole purpose of simulating and analyzing the **gas consumption** of the DAO **PermissionManager** contract under various scenarios.
 
@@ -7,7 +7,7 @@ This repository is a **research fork** of the Aragon OSx protocol contracts, cre
 
 ---
 
-## 📌 Scope of this Repository
+## Scope of this Repository
 
 This repo focuses on:
 
@@ -24,15 +24,15 @@ This repo focuses on:
 
 ---
 
-## ⚙️ Technical Details
+## Settings
 
 - This project uses the **Hardhat optimizer with 200 runs** (enabled in `hardhat.config.ts`)
-- Gas logs are written into `gas-report.csv`
+- Gas logs are written into `gas-report.csv` in the gas-reports folder
 - Results are analyzed via the provided notebook `gas-report-analysis.ipynb`
 
 ---
 
-## 📝 Modifications from Aragon OSx
+## Modifications from Aragon OSx
 
 We based our work on the official Aragon OSx repo and have **only modified two test files** to enable gas metering:
 
