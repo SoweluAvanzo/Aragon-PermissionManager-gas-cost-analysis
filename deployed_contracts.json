@@ -1,0 +1,22 @@
+{
+  "deployedContractAddresses": {
+    "ManagementDAOProxyImplementation": "0xdBf466C5AbFc43bc9a6AC923fddB7ad2be209df0",
+    "ManagementDAOProxy": "0x58ea05b958f7997Dd186C71579B40Aa8456c770b",
+    "ENSRegistry": "0x3153eDfaBE7608A97d0Cb02929917FE90cE2CB87",
+    "PublicResolver": "0xEbFE59025761DB00993d75C33C58271aABA88E4E",
+    "DAOENSSubdomainRegistrarProxy_Implementation": "0x07bf260a44CEADfad215cc8e20c5b0398D25b1FA",
+    "DAOENSSubdomainRegistrarProxy": "0xDb2f554A333D189ed59eA36020a83F7d6De14328",
+    "PluginENSSubdomainRegistrarProxy_Implementation": "0x94A44de106112A761B69dFBEB1ac6cfdD1B80304",
+    "PluginENSSubdomainRegistrarProxy": "0x47330D2fe6F75899597C14d615003Ef561B01B14",
+    "DAORegistryProxy_Implementation": "0xEe170eFF1BCeA1f7a46F46634fa40d590AAa5200",
+    "DAORegistryProxy": "0xaA43293a7419942736633f682c3b7002f49232AE",
+    "PluginRepoRegistryProxy_Implementation": "0x022D2B8173c7BCad83420d0953362335afB89355",
+    "PluginRepoRegistryProxy": "0x5d423e3eb3948873aC1b86F18dC47B4Ec4557482",
+    "PluginRepoFactory": "0x8AAFC28174bb6c3BDc7BE92f18c2F134E876c05E",
+    "PluginSetupProcessor": "0xA272fB0D17DC50652Fda5cF1651C6f8f21Fb02A8",
+    "DAOFactory": "0x8EB5A8B9732022F20ab4d3128DDf3a50a6dAa7A2",
+    "GlobalExecutor": "0x11457D5b1025D162F3d9B7dBeab6E1fBca20e043",
+    "PlaceholderSetup": "0x5b85493c5dF5718E0458d998D87e7caa76F69503"
+  },
+  "managementDAOActions": []
+}

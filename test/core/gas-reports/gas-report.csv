@@ -1,0 +1,11 @@
+Description,Gas Used,Gas Price (gwei),Total Cost (ETH)
+"PermissionManagerTest:constructor",1095049,80.0,0.08760392
+"PermissionManager.grant()",51008,80.0,0.00408064
+"PermissionManagerTest.revoke() (1 permission)",28673,80.0,0.00229384
+"PermissionMnagerTest.applyMultiTargetPermissions (bulk grant, 3 permissions)",107738,80.0,0.00861904
+"PermissionMnagerTest.applyMultiTargetPermissions (bulk grant, 6 permissions)",168110,80.0,0.0134488
+"PermissionManagerTest.applyMultiTargetPermissions() (bulk revoke, 6 permissions)",68697,80.0,0.00549576
+"PermissionManagerTest.applyMultiTargetPermissions() (bulk revoke, 3 permissions)",39305,80.0,0.0031444
+"PermissionManagerTest.grant() (1 permission)",51008,80.0,0.00408064
+"PermissionManagerTest.grant() (1 permission)",51008,80.0,0.00408064
+"DAO.execute() (succeedAction)",47664,80.0,0.00381312

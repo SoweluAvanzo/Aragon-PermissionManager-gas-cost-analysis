@@ -1,0 +1,77 @@
+WARNING: newtork goerli is not found in networks.ts file
+WARNING: newtork devSepolia is not found in networks.ts file
+WARNING: newtork baseGoerli is not found in networks.ts file
+WARNING: newtork lineaSepolia is not found in networks.ts file
+Is deploy test is enabled:  false
+(node:85598) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Nothing to compile
+Overwriting revertedWith matcher
+
+  Core: PermissionManager
+    init
+      ✔ should allow init call only once
+      ✔ should emit Granted
+      ✔ should add ROOT_PERMISSION
+    grant
+      ✔ should add permission
+      ✔ reverts if both `_who == ANY_ADDR` and `_where == ANY_ADDR
+      ✔ reverts if permissionId is restricted and `_who == ANY_ADDR`
+      ✔ succeeds if permissionId is not restricted and `_who == ANY_ADDR`
+      ✔ reverts if permissionId is restricted and `_where == ANY_ADDR`
+      ✔ reverts if permissionId is not restricted and `_where == ANY_ADDR`
+      ✔ should emit Granted
+      ✔ should not emit granted event if already granted
+      ✔ should not allow grant
+      ✔ should not allow for non ROOT
+    grantWithCondition
+      ✔ reverts if the condition address is not a contract
+      ✔ reverts if the condition contract does not support `IPermissionConditon`
+      ✔ should add permission
+      ✔ should emit Granted
+      ✔ should emit Granted when condition is present and `who == ANY_ADDR` or `where == ANY_ADDR`
+      ✔ should not emit Granted with already granted with the same condition or ALLOW_FLAG
+      ✔ reverts if tries to grant the same permission, but with different condition
+      ✔ should set PermissionCondition
+      ✔ should not allow grant
+      ✔ reverts if the caller does not have `ROOT_PERMISSION_ID`
+    revoke
+      ✔ should revoke
+      ✔ should emit Revoked
+      ✔ should revert if not granted
+      ✔ should not emit revoked if already revoked
+      ✔ should not allow
+      ✔ should not allow for non ROOT
+    bulk on multiple target
+      ✔ should bulk grant ADMIN_PERMISSION on different targets
+      ✔ should bulk revoke
+      ✔ should revert if non-zero condition is used with `grant` operation type
+      ✔ should grant with condition
+      ✔ throws Unauthorized error when caller does not have ROOT_PERMISSION_ID permission
+    bulk on single target
+      ✔ should bulk grant ADMIN_PERMISSION
+      ✔ should bulk revoke
+      ✔ reverts for `Operation.GrantWithCondition` 
+      ✔ should handle bulk mixed
+      ✔ should emit correct events on bulk
+      ✔ should not allow
+      ✔ should not allow for non ROOT
+    isGranted
+      ✔ returns `true` if the permission is granted to the user
+      ✔ returns `false` if the permission is not granted to the user
+      ✔ returns `true` if a condition is set for a specific caller and target answering `true`
+      ✔ returns `true` if a condition is set for a generic caller answering `true`
+      ✔ returns `true` if a condition is set for a generic target answering `true`
+      ✔ should be callable by anyone
+      ✔ does not fall back to a generic caller or target condition if a specific condition is set already answering `false`
+      ✔ does not fall back to a generic target condition if a generic caller condition is set already answering `false`
+      ✔ does not fall back to a generic caller or target condition if a specific condition is set already answering `false`
+      ✔ returns `true` if the permission is granted to `_who == ANY_ADDR`
+    _hasPermission
+      ✔ should call IPermissionCondition.isGranted
+    helpers
+      ✔ should hash PERMISSIONS
+
+
+  53 passing (5s)
+
