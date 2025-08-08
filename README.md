@@ -45,10 +45,33 @@ We based our work on the official Aragon OSx repo and have **only modified two t
 
 ---
 
-## 📦 Installation & Usage
+## Installation & Usage
 
 Clone the repository and run:
 
 ```bash
 npm install
 npx hardhat test
+```
+
+This will:
+
+    Run the modified Hardhat tests
+
+    Log gas usage in test/gas-reports/gas-report.csv
+
+# Postprocessing (Gas Analysis)
+
+To compute average gas cost per operation:
+
+    Open the gas-report-analysis.ipynb notebook
+
+    Run all cells
+
+    The notebook will:
+
+        Load gas-report.csv
+
+        Group operations by description
+
+        Compute the average gas used for each
