@@ -1,3 +1,6 @@
+// Modified by Sowelu Avanzo on 2025-07-08
+// Original source: https://github.com/aragon/osx/tree/develop
+
 import {
   DAO,
   ERC20Mock,
